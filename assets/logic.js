@@ -3,17 +3,19 @@ const carousel = document.querySelector('#projectsCarousel')
 const navbar = document.querySelector('nav');
 const footer = document.querySelector('footer');
 const carouselCells = document.querySelectorAll('.carousel-cell');
+const burgerMenu = document.querySelector('#mobileBurger');
+const mobileNav = document.querySelector('#mobileNav')
 const projects = [
   {
     title: 'myCharitySearch',
-    description: 'An app designed for those who are interested in donating to a charity. The user can find local charities near them, as well as global charities. Their most recently clicked charities are saved into the history section.',
+    description: 'An app designed for those who are interested in donating to a charity. Users can find local charities, as well as global charities. Their most recently clicked results are saved to the history section.',
     image: './assets/images/myCharitySearch.png',
     github: 'https://github.com/alonzofroman/charities-project',
     link: 'https://alonzofroman.github.io/charities-project/'
   },
   {
     title: 'omegleChatBot',
-    description: 'A chat bot that spams a particular message to hundreds of people within minutes. More specifically, this bot takes the user\'s message, automatically sends it to a stranger on omegle.com, disconnects from that chat session, and starts all over again.',
+    description: 'A chat bot that spams a message to hundreds of people within minutes. This bot takes the user\'s message, automatically sends it to a stranger on omegle.com, disconnects from the chat session, and starts all over again.',
     image: './assets/images/omegleChatBot.png',
     github: 'https://github.com/mstephen19/omegle-Chat-Bot'
   },
@@ -100,5 +102,13 @@ function createFlickity(){
 insertToCarousel();
 createFlickity();
 
+function showMobileNav(){
+  mobileNav.classList.toggle('slideDown');
+  burgerMenu.classList.toggle('rotate')
+  mobileNav.addEventListener('click', ()=>{
+    mobileNav.classList.toggle('slideDown');
+    burgerMenu.classList.toggle('rotate')
+  })
+}
 
-
+burgerMenu.addEventListener('click', showMobileNav);
