@@ -1,0 +1,108 @@
+/*https://colorhunt.co/palette/a3ddcbe8e9a1e6b566e5707e*/
+:root {
+  --red: #d15858;
+  --orange: #E6B566;
+  --yellow: #dddf8b;
+  --blue: #A3DDCB;
+  --green: #9bd47a;
+  --darkGrey: rgba(22, 22, 22, 0.856);
+}
+
+* {
+  scroll-behavior: smooth;
+}
+
+nav {
+  width: 100vw;
+  height: 10vh;
+  top: 0%;
+  background: var(--red);
+  display: flex;
+  transition: all 0.3s linear;
+}
+
+#logo {
+  width: 25%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+#navOptions {
+  display: flex;
+  justify-content: space-evenly;
+  align-items: center;
+  width: 75%;
+  height: 100%;
+}
+
+.fixed {
+  position: fixed;
+}
+
+.hidden {
+  opacity: 0%;
+}
+
+.hidden:hover {
+  opacity: 100%;
+}
+
+#sectionsWrapper {
+  padding: none;
+  margin: 0px;
+  box-sizing: border-box;
+  height: auto;
+}
+
+#sectionsContainer {
+  height: 100vh;
+  scroll-snap-type: y mandatory;
+  overflow-y: scroll;
+}
+
+section {
+  height: 100vh;
+  min-width: 100vw;
+  font-size: 2rem;
+  color: white;
+  text-shadow: -2px 2px 5px var(--darkGrey);
+  font-weight: bold;
+  scroll-snap-align: start;
+}
+
+.sec1 {
+  background: var(--orange);
+}
+
+.sec2 {
+  background: var(--blue);
+}
+
+.sec3 {
+  background: var(--green);
+}
+
+.sec4 {
+  background: var(--yellow);
+}
+
+.title {
+  width: 100%;
+  height: auto;
+  font-size: 3rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: green;
+}
+
+footer {
+  width: 100vw;
+  height: 10vh;
+  bottom: 0%;
+  background: var(--red);
+  display: none;
+  transition: all 0.3s linear;
+}
