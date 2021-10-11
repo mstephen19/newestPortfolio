@@ -53,10 +53,6 @@ nav {
   display: none;
 }
 
-.hideBurger {
-  visibility: hidden;
-}
-
 li a {
   text-decoration: none;
   font-size: 1.5rem;
@@ -195,13 +191,13 @@ section {
   margin-right: 20px;
   width: 50vw;
   max-width: 600px;
-  height: inherit;
+  height: 100%;
   overflow: hidden;
 }
 
 .carousel-cell img {
   display: block;
-  height: 50vh;
+  height: 65%;
   max-height: 500px;
 }
 
@@ -210,14 +206,16 @@ section {
   justify-content: space-evenly;
   align-items: center;
   flex-direction: column;
-  font-size: 2.5rem;
+  font-size: 2.2rem;
   max-width: 600px;
+  height: 30%;
   /* height: 25vh; */
+  margin-top: 10px;
   color: var(--darkGrey);
 }
 
 .projectDescription p {
-  font-size: 1.3rem;
+  font-size: 1.2rem;
 }
 
 .buttons button {
@@ -302,6 +300,15 @@ footer {
   transform: translate(2px 2px);
 }
 
+#phoneSection {
+  height: 8%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-size: 1.5rem;
+  color: var(--darkGrey);
+}
+
 @media screen and (max-width: 700px){
   .title {
     font-size: 2rem;
@@ -317,13 +324,17 @@ footer {
   }
   .projectDescription {
     font-size: 1.5rem;
-    width: 95vw
+    width: 95vw;
+    margin: none;
   }
   .projectDescription p {
     font-size: 1rem;
   }
   .carousel-cell {
     width: 100vw;
+  }
+  .carousel-cell img {
+    max-height: 200px;
   }
   .row img  {
     width: 30%;
@@ -364,6 +375,9 @@ footer {
     transition: all 0.3s linear;
     cursor: pointer;
   }
+  .hideBurger {
+    visibility: hidden;
+  }
   .rotate {
     transform: rotate(90deg)
   }
@@ -394,4 +408,33 @@ footer {
       transform: translateY(0%);
     }		
   }
+}
+
+@media screen and (max-width: 1000px){
+  .projectDescription {
+    width: 95vw;
+  }
+  .carousel-cell {
+    width: 100vw;
+    height: 100%;
+  }
+  .carousel-cell img {
+    max-height: 500px;
+  }
+  .row img  {
+    width: 30%;
+  }
+  .row a img {
+    width: 30vw;
+  }
+  .line {
+    width: 10%;
+  }
+  .slideDown{
+    animation-name: slideDown;
+    animation-duration: 1s;
+    animation-timing-function: ease;
+    visibility: visible !important;
+  }
+  /* slideDown animation from https://codepen.io/sarfaraz72/pen/KEYeQz */
 }

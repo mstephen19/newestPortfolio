@@ -5,17 +5,18 @@ const footer = document.querySelector('footer');
 const carouselCells = document.querySelectorAll('.carousel-cell');
 const burgerMenu = document.querySelector('#mobileBurger');
 const mobileNav = document.querySelector('#mobileNav')
+const phoneBtn = document.querySelector('.phoneNumButton')
 const projects = [
   {
     title: 'myCharitySearch',
-    description: 'An app designed for those who are interested in donating to a charity. Users can find local charities, as well as global charities. Their most recently clicked results are saved to the history section.',
+    description: 'An app designed for those interested in donating to a charity. Users can find local charities, as well as global charities. Their most recently clicked results are saved to the history section.',
     image: './assets/images/myCharitySearch.png',
     github: 'https://github.com/alonzofroman/charities-project',
     link: 'https://alonzofroman.github.io/charities-project/'
   },
   {
     title: 'omegleChatBot',
-    description: 'A chat bot that spams a message to hundreds of people within minutes. This bot takes the user\'s message, automatically sends it to a stranger on omegle.com, disconnects from the chat session, and starts all over again.',
+    description: 'Chat bot that spams a message to hundreds of people within minutes. The bot takes the user\'s message, automatically sends it to a stranger on omegle.com, disconnects from the chat, and starts all over again.',
     image: './assets/images/omegleChatBot.png',
     github: 'https://github.com/mstephen19/omegle-Chat-Bot'
   },
@@ -114,3 +115,13 @@ function showMobileNav(){
 }
 
 burgerMenu.addEventListener('click', showMobileNav);
+
+// cl(document.querySelector('#phoneSection').children[1])
+
+function pastePhoneNumber(){
+  const number = _(document.querySelector('#phoneSection').children[1].getAttribute('data-ph')).reverseString();
+  el(this).hide()
+  el(document.querySelector('#phoneSection').children[1]).text(number);
+}
+
+phoneBtn.addEventListener('click', pastePhoneNumber)
