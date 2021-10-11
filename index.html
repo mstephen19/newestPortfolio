@@ -5,6 +5,14 @@
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./assets/mattReset.css">
+  <!--Flickity https://flickity.metafizzy.co/-->
+  <link rel="stylesheet" href="https://unpkg.com/flickity@2/dist/flickity.min.css">
+  <!-- fontawesome -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta2/css/all.min.css" integrity="sha512-YWzhKL2whUzgiheMoBFwW8CKV4qpHQAEuvilg9FAn5VJUDwKZZxkJNuGM4XkWuk94WCrrwslk8yWNGmY1EduTA==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <!-- google fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Open+Sans&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="./assets/style.css">
   <title>Matt Stephens - Portfolio</title>
 </head>
@@ -24,30 +32,127 @@
     <div id="sectionsContainer">
       <section id="about" class="sec1">
           <div class="title">
-            <h2>About</h1>
+            <div class="line"></div>
+            <h2>About</h2>
+            <div class="line"></div>
           </div>
       </section>
+
       <section id="portfolio"class="sec2">
         <div class="title">
-          <h2>Portfolio</h1>
+          <div class="line"></div>
+          <h2>Portfolio</h2>
+          <div class="line"></div>
+        </div>
+        <div id="portfolioContent">
+          <div class="projectDescription">
+            <h3 id="projectTitle"></h3>
+            <p></p>
+          </div>
+          <div id="carouselContainer">
+            <div>
+
+              <div id="projectsCarousel">
+
+                <div class="carousel-cell">
+                  <img src="">
+                  <div class="projectDescription">
+                    <h3></h3>
+                    <p></p>
+                    <div class="buttons">
+                      <a href=""><button><i class="fab fa-github"></i>See it on Github!</button></a>
+                      <a href=""><button><i class="fas fa-link" aria-hidden="true"></i>See it live!</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="">
+                  <div class="projectDescription">
+                    <h3></h3>
+                    <p></p>
+                    <div class="buttons">
+                      <a href=""><button><i class="fab fa-github"></i>See it on Github!</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="">
+                  <div class="projectDescription">
+                    <h3></h3>
+                    <p></p>
+                    <div class="buttons">
+                      <a href=""><button><i class="fab fa-github"></i>See it on Github!</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="">
+                  <div class="projectDescription">
+                    <h3></h3>
+                    <p></p>
+                    <div class="buttons">
+                      <a href=""><button><i class="fab fa-github"></i>See it on Github!</button></a>
+                      <a href=""><button><i class="fas fa-link" aria-hidden="true"></i>See it live!</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="">
+                  <div class="projectDescription">
+                    <h3></h3>
+                    <p></p>
+                    <div class="buttons">
+                      <a href=""><button><i class="fab fa-github"></i>See it on Github!</button></a>
+                      <a href=""><button><i class="fas fa-link" aria-hidden="true"></i>See it live!</button></a>
+                    </div>
+                  </div>
+                </div>
+
+                <div class="carousel-cell">
+                  <img src="">
+                  <div class="projectDescription">
+                    <h3></h3>
+                    <p></p>
+                    <div class="buttons">
+                      <a href=""><button><i class="fab fa-github"></i>See it on Github!</button></a>
+                      <a href=""><button><i class="fas fa-link" aria-hidden="true"></i>See it live!</button></a>
+                    </div>
+                  </div>
+                </div>
+
+              </div>
+
+            </div>
+          </div>
         </div>
       </section>
+
       <section id="skills" class="sec3">
         <div class="title">
-          <h2>Skills</h1>
+          <div class="line"></div>
+          <h2>Skills</h2>
+          <div class="line"></div>
         </div>
       </section>
       <section id="contact" class="sec4">
         <div class="title">
-          <h2>Socials</h1>
+          <div class="line"></div>
+          <h2>Socials</h2>
+          <div class="line"></div>
         </div>
       </section>
     </div>
   </div>
   <footer class="fixed hidden">
-    
+    <p>Made with <span id="heart">❤️</span> by Matt Stephens</p>
   </footer>
   <script src="./assets/useful.js"></script>
+  <!--Flickity-->
+  <script src="https://unpkg.com/flickity@2/dist/flickity.pkgd.min.js"></script>
   <script src="./assets/logic.js"></script>
 </body>
 </html>
