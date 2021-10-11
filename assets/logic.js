@@ -50,7 +50,7 @@ const projects = [
 
 sections.addEventListener('scroll', ()=>{
   //cl(sections.scrollTop);
-    if (sections.scrollTop >= 500)  {
+    if (sections.scrollTop >= 250)  {
       navbar.classList.add('fixed');
       navbar.classList.add('hidden');
     } else {

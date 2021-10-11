@@ -301,8 +301,11 @@ footer {
   .title {
     font-size: 2rem;
   }
+  .title h2 {
+    padding: 0px 5px 0px 5px;
+  }
   #aboutContainer p {
-    font-size: 1.1rem;
+    font-size: 1rem;
   }
   #aboutMe button {
     font-size: 1.5rem;
