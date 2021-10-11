@@ -32,7 +32,7 @@ const projects = [
   },
   {
     title: 'CodeQuiz',
-    description: 'A timed 20 question JavaScript quiz, in which the user is rewarded with time upon correctly answering a question, and is docked time upon incorrectly answering a question. Upon completion, the user can locally save their highscores, along with their name.',
+    description: 'A timed 20 question JavaScript quiz, in which the user is rewarded with time upon correctly answering, and docked time upon incorrectly answering. The user can locally save their highscores, along with their name.',
     image: './assets/images/codeQuiz.png',
     github: 'https://github.com/mstephen19/codeQuiz',
     link: 'https://mstephen19.github.io/codeQuiz/'
