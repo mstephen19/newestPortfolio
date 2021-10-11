@@ -53,9 +53,11 @@ sections.addEventListener('scroll', ()=>{
     if (sections.scrollTop >= 250)  {
       navbar.classList.add('fixed');
       navbar.classList.add('hidden');
+      burgerMenu.classList.add('hideBurger');
     } else {
       navbar.classList.remove('hidden');
       navbar.classList.remove('fixed');
+      burgerMenu.classList.remove('hideBurger');
       el(footer).hide()
     }
     if (sections.scrollTop >= 2100) {
