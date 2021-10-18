@@ -22,7 +22,7 @@ const projects = [
   },
   {
     title: 'useful.js JavaScript Library',
-    description: 'A JavaScript library that makes certain common tasks much easier to achieve.',
+    description: 'A very small JavaScript library that makes certain common tasks easier to achieve.',
     image: './assets/images/usefulJS.png',
     github: 'https://github.com/mstephen19/usefulJS-library'
   },
@@ -46,6 +46,12 @@ const projects = [
     image: './assets/images/palleteCreator.png',
     github: 'https://github.com/mstephen19/PaletteCreator',
     link: 'https://mstephen19.github.io/PaletteCreator/'
+  },
+  {
+    title: 'Node.js README Generator',
+    description: 'Generate a professional README file for your project with a badge based on just a few simple prompts.',
+    image: './assets/images/readMeGen.gif',
+    github: 'https://github.com/mstephen19/Good-README-Generator'
   }
 ];
 
