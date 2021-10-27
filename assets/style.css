@@ -1,9 +1,9 @@
 /*https://colorhunt.co/palette/a3ddcbe8e9a1e6b566e5707e*/
 :root {
   --red: #d15858;
-  --orange: #E6B566;
+  --orange: #e6b566;
   --yellow: #dddf8b;
-  --blue: #A3DDCB;
+  --blue: #a3ddcb;
   --green: #9bd47a;
   --darkGrey: rgba(22, 22, 22, 0.856);
 }
@@ -116,9 +116,9 @@ section {
   background: var(--yellow);
 }
 
-#aboutMe{
+#aboutMe {
   width: 100%;
-  height: 100%;
+  height: 95%;
   display: flex;
   justify-content: space-evenly;
   align-items: center;
@@ -126,6 +126,7 @@ section {
 }
 
 #aboutContainer {
+  overflow-y: scroll;
   text-align: center;
   display: flex;
   justify-content: center;
@@ -135,6 +136,8 @@ section {
   max-width: 1000px;
   height: 80%;
   color: var(--darkGrey);
+  background: rgba(228, 227, 227, 0.397);
+  overflow: hidden;
 }
 
 #aboutContainer p {
@@ -240,7 +243,7 @@ section {
   align-items: center;
 }
 
-.row img  {
+.row img {
   width: 25%;
   max-width: 200px;
   transition: all 0.2s linear;
@@ -263,7 +266,7 @@ section {
   transform: scale(0.95);
 }
 
-.row a img:active{
+.row a img:active {
   background: white;
 }
 
@@ -309,7 +312,7 @@ footer {
   color: var(--darkGrey);
 }
 
-@media screen and (max-width: 700px){
+@media screen and (max-width: 700px) {
   .title {
     font-size: 2rem;
   }
@@ -317,7 +320,7 @@ footer {
     padding: 0px 5px 0px 5px;
   }
   #aboutContainer p {
-    font-size: 1rem;
+    font-size: 1.1rem;
   }
   #aboutMe button {
     font-size: 1.5rem;
@@ -336,7 +339,7 @@ footer {
   .carousel-cell img {
     max-height: 200px;
   }
-  .row img  {
+  .row img {
     width: 30%;
   }
   .row a img {
@@ -352,14 +355,14 @@ footer {
     display: none;
   }
   #mobileNav {
-    width: 30vw;
-    height: 20%;
+    width: 35vw;
+    height: 25%;
     background: var(--red);
     display: flex;
     position: absolute;
     flex-direction: column;
     right: 0%;
-    top: 10%; 
+    top: 10%;
     visibility: hidden;
     z-index: 998;
     align-items: center;
@@ -379,11 +382,11 @@ footer {
     visibility: hidden;
   }
   .rotate {
-    transform: rotate(90deg)
+    transform: rotate(90deg);
   }
-  .slideDown{
+  .slideDown {
     animation-name: slideDown;
-    animation-duration: 1s;
+    animation-duration: 0.8s;
     animation-timing-function: ease;
     visibility: visible !important;
   }
@@ -392,25 +395,25 @@ footer {
     0% {
       transform: translateY(-110%);
     }
-    50%{
+    50% {
       transform: translateY(8%);
     }
-    65%{
+    65% {
       transform: translateY(-4%);
     }
-    80%{
+    80% {
       transform: translateY(4%);
     }
-    95%{
+    95% {
       transform: translateY(-2%);
-    }			
+    }
     100% {
       transform: translateY(0%);
-    }		
+    }
   }
 }
 
-@media screen and (max-width: 1000px){
+@media screen and (max-width: 1000px) {
   .projectDescription {
     width: 95vw;
   }
@@ -421,7 +424,7 @@ footer {
   .carousel-cell img {
     max-height: 500px;
   }
-  .row img  {
+  .row img {
     width: 30%;
   }
   .row a img {
@@ -430,7 +433,7 @@ footer {
   .line {
     width: 10%;
   }
-  .slideDown{
+  .slideDown {
     animation-name: slideDown;
     animation-duration: 1s;
     animation-timing-function: ease;
