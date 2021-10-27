@@ -5,25 +5,26 @@ This is my new portfolio website which features a more professional design, as w
 ![Image](./assets/images/siteDemo.gif)
 
 ## Original WireFrame Layout
+
 ![Image](./assets/images/wireframe.jpeg)
 
 ## Built With
 
-* [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
-* [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
-* [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
-* [Flickity](https://flickity.metafizzy.co/)
-* [usefulJS](https://github.com/mstephen19/usefulJS-library)
-* [FontAwesome](https://fontawesome.com)
-* [Google Fonts](https://fonts.google.com/)
-* [ColorHunt](https://colorhunt.co/) (for color pallete)
-* [Meyer Web reset.css file](https://meyerweb.com/eric/tools/css/reset/)
+- [HTML](https://developer.mozilla.org/en-US/docs/Web/HTML)
+- [CSS](https://developer.mozilla.org/en-US/docs/Web/CSS)
+- [Javascript](https://developer.mozilla.org/en-US/docs/Web/JavaScript)
+- [Flickity](https://flickity.metafizzy.co/)
+- [usefulJS](https://github.com/mstephen19/usefulJS-library)
+- [FontAwesome](https://fontawesome.com)
+- [Google Fonts](https://fonts.google.com/)
+- [ColorHunt](https://colorhunt.co/) (for color pallete)
+- [Meyer Web reset.css file](https://meyerweb.com/eric/tools/css/reset/)
 
 ## Notable Stuff
 
 ### Javascript logic used to change navbar position and opacity based on scroll position within the main sections:
 
-``` Javascript
+```Javascript
 sections.addEventListener('scroll', ()=>{
   //cl(sections.scrollTop);
     if (sections.scrollTop >= 250)  {
@@ -45,7 +46,8 @@ sections.addEventListener('scroll', ()=>{
 ```
 
 ### CSS scroll snapping sections:
-``` CSS
+
+```CSS
 * {
   scroll-behavior: smooth;
 }
@@ -59,11 +61,11 @@ sections.addEventListener('scroll', ()=>{
 
 ## Deployed Link
 
-* [Live Site Here](https://mstephen19.github.io/newestPortfolio)
+- [Live Site Here](https://mstephen19.github.io/newestPortfolio)
 
 ## Author
 
-**Matt Stephens** 
+**Matt Stephens**
 
 - [Link to Portfolio Site](https://mstephen19.github.io/newestPortfolio)
 - [Link to Github](https://github.com/mstephen19)
@@ -71,4 +73,4 @@ sections.addEventListener('scroll', ()=>{
 
 ### Acknowledgments
 
-* Shoutout to [Jesse Lewis](https://www.linkedin.com/in/jesseaustinlewis/) for helping me find bugs with the mobile version of the site
+- Shoutout to [Jesse Lewis](https://www.linkedin.com/in/jesseaustinlewis/) for helping me find bugs with the mobile version of the site
